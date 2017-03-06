@@ -1,6 +1,6 @@
 # crackDesignStudy
-Author:   Sunny Islam
-Year:     2017
+Author: Sunny Islam
+Year: 2017
 Generates an Abaqus simulation batch describing a cracked half-plane, and outputs the J-integral
 
 # Contents
