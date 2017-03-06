@@ -1,0 +1,370 @@
+1
+
+   Abaqus 6.14-1                                  Date 05-Mar-2017   Time 23:17:00
+   For use at NTNU NORGES TEKNISK NATURVITENSKAPELIGE UNIVERSITET under license from Dassault Systemes or its subsidiary.
+
+
+
+                         The Abaqus Software is a product of:
+
+                           Dassault Systemes Simulia Corp.
+                                 Rising Sun Mills
+                                 166 Valley Street
+                           Providence, RI 02909-2499, USA
+ 
+
+
+                   Available for internal use at NTNU NORGES TEKNISK NATURVITENSKAPELIGE UNIVERSITET. 
+                   The Abaqus Online Support System is accessible
+                   through the "My Support" section of the SIMULIA
+                   Home Page at http://www.simulia.com.
+
+                   Support policies for academic licenses are described
+                   on the SIMULIA web site at
+                   http://www.3ds.com/products/simulia/academics/
+ 
+                          On machine Sunny-LAPTOP 
+                          you are authorized to run
+                          Abaqus/Standard until 30-Sep-2017
+
+                          Your site id is: 100000000001981 
+
+
+ 
+                    For assistance or any other information you may
+                    obtain contact information for your local office
+                    from the world wide web at:
+
+                      http://www.3ds.com/products/simulia/locations/
+
+ 
+                * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+                *                                                         * 
+                *                   *****************                     * 
+                *                   *  N O T I C E  *                     * 
+                *                   *****************                     * 
+                *                                                         * 
+                *                                                         * 
+                *                    Abaqus 6.14-1                        * 
+                *                                                         * 
+                *          BUILD ID: 2014_06_05-00.11.02 134264           * 
+                *                                                         * 
+                *                                                         * 
+                *  Please make sure you are using release 6.14 manuals    * 
+                *  plus the notes accompanying this release.              * 
+                *                                                         * 
+                *                                                         * 
+                *                                                         * 
+                *                                                         * 
+                *                                                         * 
+                *   This program may not be used for commercial purposes  * 
+                *           without payment of a commercial fee.          * 
+                *                                                         * 
+                * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+
+
+ 
+
+
+
+     PROCESSING PART, INSTANCE, AND ASSEMBLY INFORMATION
+   *******************************************************
+
+
+     END PROCESSING PART, INSTANCE, AND ASSEMBLY INFORMATION
+   ***********************************************************
+
+  *contourintegral, crackname=JINTEGRAL_CRACK-1, frequency=99999, normal, contours=10, cracktipnodes, symm
+
+
+
+     OPTIONS BEING PROCESSED
+   ***************************
+
+
+  *Heading
+  *Node
+  *Element, type=CPE4
+  *Nset, nset=ASSEMBLY_PART-1-1__PICKEDSET3
+  *Elset, elset=ASSEMBLY_PART-1-1__PICKEDSET3
+  *Nset, nset=ASSEMBLY__PICKEDSET1266
+  *Nset, nset=ASSEMBLY__PICKEDSET1267
+  *Nset, nset=ASSEMBLY__PICKEDSET1268
+  *Nset, nset=ASSEMBLY__PICKEDSET1269
+  *Nset, nset=ASSEMBLY__PICKEDSET1270
+  *Elset, elset=ASSEMBLY__PICKEDSET1268
+  *Elset, elset=ASSEMBLY__PICKEDSET1270
+  *material, name=MATERIAL-1
+  *elastic
+  *plastic, hardening=JOHNSONCOOK
+
+ ***WARNING: BOTH THE TRANSITION AND MELTING TEMPERATURES ARE ZERO. TEMPERATURE 
+             DEPENDENCIES ARE SUPPRESSED
+  *solidsection, elset=ASSEMBLY_PART-1-1__PICKEDSET3, material=MATERIAL-1
+  *boundary
+  *boundary
+  *boundary
+  *solidsection, elset=ASSEMBLY_PART-1-1__PICKEDSET3, material=MATERIAL-1
+  *output, field, variable=PRESELECT
+  *output, history, variable=PRESELECT
+  *output, field, variable=PRESELECT
+  *output, history, variable=PRESELECT
+  *output, field, variable=PRESELECT
+  *output, history, variable=PRESELECT
+  *Step, name=Step-1, nlgeom=NO
+  *output, field, variable=PRESELECT
+  *output, history, variable=PRESELECT
+  *Step, name=Step-1, nlgeom=NO
+  *Step, name=Step-1, nlgeom=NO
+  *static
+  *boundary
+  *output, field, variable=PRESELECT
+  *output, history, variable=PRESELECT
+  *endstep
+  *boundary
+  *boundary
+  *Step, name=Step-1, nlgeom=NO
+  *static
+  *boundary
+  *contourintegral, crackname=JINTEGRAL_CRACK-1, frequency=99999, normal, contours=10, cracktipnodes, symm
+  *endstep
+  
+                               E L E M E N T   Q U A L I T Y  C H E C K S        
+  
+  
+ ***NOTES: DISTORTED ISOPARAMETRIC ELEMENTS: ANGLE BETWEEN ISOPARAMETRIC LINES 
+           IS LESS THAN 45 DEGREES OR GREATER THAN 135 DEGREES.
+  
+           TETRAHEDRAL QUALITY MEASURE: VOLUME OF TETRAHEDRON DIVIDED BY THE 
+           VOLUME OF EQUILATERAL TETRAHEDRON WITH SAME CIRCUMSPHERE RADIUS; 
+           0 FOR DEGENERATE TETRAHEDRON AND 1 FOR EQUILATERIAL TETRAHEDRON. IT 
+           IS RECOMMENDED THAT THE TETRAHEDRAL QUALITY MEASURE BE GREATER THAN 
+           0.02, THE MIN INTERIOR (DIHEDRAL) ANGLE BE GREATER THAN 10 DEGREES, 
+           AND THE MAX INTERIOR (DIHEDRAL) ANGLE BE LESS THAN 160 DEGREES. 
+  
+           MODIFIED TETRAHEDRAL QUALITY MEASURE: ANGLES BETWEEN THE TWO LINE 
+           SEGMENTS ON EACH EDGE; THE EDGES OF MODIFIED TETRAHEDRAL SHOULD BE 
+           AS STRAIGHT AS POSSIBLE. IT IS RECOMMENDED THAT THE ANGLE BETWEEN 
+           THE TWO LINE SEGMENTS ON EACH EDGE IS BETWEEN 160 AND 180 DEGREES. 
+  
+           TRIANGULAR QUALITY MEASURE: AREA OF TRIANGLE DIVIDED BY THE AREA OF 
+           EQUILATERAL TRIANGLE WITH SAME CIRCUMCIRCLE RADIUS; 0 FOR DEGENERATE 
+           TRIANGLE AND 1 FOR EQUILATERAL TRIANGLE. IT IS RECOMMENDED THAT THE
+           TRIANGULAR QUALITY MEASURE BE GREATER THAN 0.01, THE MIN INTERIOR 
+           ANGLE BE GREATER THAN 10 DEGREES, AND THE MAX INTERIOR ANGLE BE LESS 
+           THAN 160 DEGREES. 
+  
+           NODAL ADJUSTMENTS ARISING FROM CONTACT INTERACTIONS AND/OR TIE 
+           CONSTRAINTS CAN CAUSE SEVERE ELEMENT DISTORTION. IT MAY BE NECESSARY 
+           TO REMESH IN ORDER TO REDUCE THE AMOUNT OF ADJUSTMENT. 
+
+ ***WARNING: 73 elements are distorted. Either the isoparametric angles are out 
+             of the suggested limits or the triangular or tetrahedral quality 
+             measure is bad. The elements have been identified in element set 
+             WarnElemDistorted.
+  
+ --------------------------------------------------------------------------------
+ Distorted isoparametric elements
+  
+      Element        Min/max angle   Adjusted nodes 
+ ------------------ ---------------- -------------- 
+       PART-1-1.835          41.3414       NO       
+       PART-1-1.836            37.25       NO       
+       PART-1-1.837          34.2217       NO       
+       PART-1-1.838          32.1824       NO       
+       PART-1-1.839          31.2643       NO       
+       PART-1-1.840          31.6384       NO       
+       PART-1-1.841          10.1888       NO       
+       PART-1-1.844          37.9069       NO       
+       PART-1-1.845          32.5188       NO       
+       PART-1-1.846          29.1373       NO       
+       PART-1-1.847          26.6724       NO       
+       PART-1-1.848          24.7489       NO       
+       PART-1-1.849          23.2019       NO       
+       PART-1-1.850          21.9384       NO       
+       PART-1-1.851          23.7685       NO       
+       PART-1-1.852           26.152       NO       
+       PART-1-1.853           29.268       NO       
+       PART-1-1.854          33.3056       NO       
+       PART-1-1.855          38.4444       NO       
+       PART-1-1.856          44.7392       NO       
+       PART-1-1.861          24.8447       NO       
+       PART-1-1.862          26.9537       NO       
+       PART-1-1.863          29.7413       NO       
+       PART-1-1.864          33.4234       NO       
+       PART-1-1.865          38.2033       NO       
+       PART-1-1.866          44.1684       NO       
+       PART-1-1.871          26.1462       NO       
+       PART-1-1.872          27.9095       NO       
+       PART-1-1.873          30.2985       NO       
+       PART-1-1.874          33.5603       NO       
+       PART-1-1.875          37.9184       NO       
+       PART-1-1.876          43.4971       NO       
+       PART-1-1.881          27.7358       NO       
+       PART-1-1.882          29.0541       NO       
+       PART-1-1.883          30.9606       NO       
+       PART-1-1.884          33.7377       NO       
+       PART-1-1.885          37.6229       NO       
+       PART-1-1.886          42.7781       NO       
+       PART-1-1.891          29.7186       NO       
+       PART-1-1.892          30.4415       NO       
+       PART-1-1.893          31.7594       NO       
+       PART-1-1.894          33.9908       NO       
+       PART-1-1.895          37.3706       NO       
+       PART-1-1.896          42.0911       NO       
+       PART-1-1.901           32.306       NO       
+       PART-1-1.902          32.1587       NO       
+       PART-1-1.903          32.7358       NO       
+       PART-1-1.904           34.362       NO       
+       PART-1-1.905          37.2256       NO       
+       PART-1-1.906           41.517       NO       
+       PART-1-1.911          35.9799       NO       
+       PART-1-1.912          34.3383       NO       
+       PART-1-1.913          33.9204       NO       
+       PART-1-1.914          34.8797       NO       
+       PART-1-1.915          37.2416       NO       
+       PART-1-1.916          41.1168       NO       
+       PART-1-1.921          41.8846       NO       
+       PART-1-1.922          37.0931       NO       
+       PART-1-1.923          35.2635       NO       
+       PART-1-1.924          35.5166       NO       
+       PART-1-1.925          37.4327       NO       
+       PART-1-1.926          40.9652       NO       
+       PART-1-1.932          40.0245       NO       
+       PART-1-1.933          36.3245       NO       
+       PART-1-1.934          36.0313       NO       
+       PART-1-1.935          37.7376       NO       
+       PART-1-1.936          41.0586       NO       
+       PART-1-1.941          43.7756       NO       
+       PART-1-1.942          36.8226       NO       
+       PART-1-1.943          35.2383       NO       
+       PART-1-1.944          35.8152       NO       
+       PART-1-1.945          37.9377       NO       
+       PART-1-1.946          41.5461       NO       
+  
+
+
+
+                            P R O B L E M   S I Z E
+
+
+          NUMBER OF ELEMENTS IS                                  1270
+          NUMBER OF NODES IS                                     1342
+          NUMBER OF NODES DEFINED BY THE USER                    1342
+          TOTAL NUMBER OF VARIABLES IN THE MODEL                 2684
+          (DEGREES OF FREEDOM PLUS MAX NO. OF ANY LAGRANGE MULTIPLIER
+           VARIABLES. INCLUDE *PRINT,SOLVE=YES TO GET THE ACTUAL NUMBER.)
+
+
+
+                              END OF USER INPUT PROCESSING
+
+
+
+     JOB TIME SUMMARY
+       USER TIME (SEC)      =  0.10000    
+       SYSTEM TIME (SEC)    =  0.10000    
+       TOTAL CPU TIME (SEC) =  0.20000    
+       WALLCLOCK TIME (SEC) =          0
+1
+
+   Abaqus 6.14-1                                  Date 05-Mar-2017   Time 23:17:05
+   For use at NTNU NORGES TEKNISK NATURVITENSKAPELIGE UNIVERSITET under license from Dassault Systemes or its subsidiary.
+
+                                                                                               STEP    1  INCREMENT    1
+                                                                                          TIME COMPLETED IN THIS STEP   0.00    
+
+
+                        S T E P       1     S T A T I C   A N A L Y S I S
+
+
+                                                                                          
+
+     AUTOMATIC TIME CONTROL WITH -
+          A SUGGESTED INITIAL TIME INCREMENT OF                0.100    
+          AND A TOTAL TIME PERIOD OF                            1.00    
+          THE MINIMUM TIME INCREMENT ALLOWED IS                1.000E-05
+          THE MAXIMUM TIME INCREMENT ALLOWED IS                0.100    
+
+     LINEAR EQUATION SOLVER TYPE         DIRECT SPARSE
+  
+                   M E M O R Y   E S T I M A T E
+  
+ PROCESS      FLOATING PT       MINIMUM MEMORY        MEMORY TO
+              OPERATIONS           REQUIRED          MINIMIZE I/O
+             PER ITERATION           (MB)               (MB)
+  
+     1         7.21E+006               17                 26
+  
+ NOTE:
+      (1) SINCE ABAQUS DOES NOT PRE-ALLOCATE MEMORY AND ONLY ALLOCATES MEMORY AS NEEDED DURING THE ANALYSIS,
+          THE MEMORY REQUIREMENT PRINTED HERE CAN ONLY BE VIEWED AS A GENERAL GUIDELINE BASED ON THE BEST
+          KNOWLEDGE AVAILABLE AT THE BEGINNING OF A STEP BEFORE THE SOLUTION PROCESS HAS BEGUN.
+      (2) THE ESTIMATE IS NORMALLY UPDATED AT THE BEGINNING OF EVERY STEP. IT IS THE MAXIMUM VALUE OF THE
+          ESTIMATE FROM THE CURRENT STEP TO THE LAST STEP OF THE ANALYSIS, WITH UNSYMMETRIC SOLUTION TAKEN
+          INTO ACCOUNT IF APPLICABLE. 
+      (3) SINCE THE ESTIMATE IS BASED ON THE ACTIVE DEGREES OF FREEDOM IN THE FIRST ITERATION OF THE 
+          CURRENT STEP, THE MEMORY ESTIMATE MIGHT BE SIGNIFICANTLY DIFFERENT THAN ACTUAL USAGE FOR 
+          PROBLEMS WITH SUBSTANTIAL CHANGES IN ACTIVE DEGREES OF FREEDOM BETWEEN STEPS (OR EVEN WITHIN
+          THE SAME STEP). EXAMPLES ARE: PROBLEMS WITH SIGNIFICANT CONTACT CHANGES, PROBLEMS WITH MODEL
+          CHANGE, PROBLEMS WITH BOTH STATIC STEP AND STEADY STATE DYNAMIC PROCEDURES WHERE ACOUSTIC 
+          ELEMENTS WILL ONLY BE ACTIVATED IN THE STEADY STATE DYNAMIC STEPS.
+      (4) FOR MULTI-PROCESS EXECUTION, THE ESTIMATED VALUE OF FLOATING POINT OPERATIONS FOR EACH PROCESS
+          IS BASED ON AN INITIAL SCHEDULING OF OPERATIONS AND MIGHT NOT REFLECT THE ACTUAL FLOATING 
+          POINT OPERATIONS COMPLETED ON EACH PROCESS. OPERATIONS ARE DYNAMICALLY BALANCED DURING EXECUTION, 
+          SO THE ACTUAL BALANCE OF OPERATIONS BETWEEN PROCESSES IS EXPECTED TO BE BETTER THAN THE ESTIMATE
+          PRINTED HERE.
+      (5) THE UPPER LIMIT OF MEMORY THAT CAN BE ALLOCATED BY ABAQUS WILL IN GENERAL DEPEND ON THE VALUE OF
+          THE "MEMORY" PARAMETER AND THE AMOUNT OF PHYSICAL MEMORY AVAILABLE ON THE MACHINE. PLEASE SEE
+          THE "ABAQUS ANALYSIS USER'S MANUAL" FOR MORE DETAILS. THE ACTUAL USAGE OF MEMORY AND OF DISK
+          SPACE FOR SCRATCH DATA WILL DEPEND ON THIS UPPER LIMIT AS WELL AS THE MEMORY REQUIRED TO MINIMIZE
+          I/O. IF THE MEMORY UPPER LIMIT IS GREATER THAN THE MEMORY REQUIRED TO MINIMIZE I/O, THEN THE ACTUAL
+          MEMORY USAGE WILL BE CLOSE TO THE ESTIMATED "MEMORY TO MINIMIZE I/O" VALUE, AND THE SCRATCH DISK
+          USAGE WILL BE CLOSE-TO-ZERO; OTHERWISE, THE ACTUAL MEMORY USED WILL BE CLOSE TO THE PREVIOUSLY
+          MENTIONED MEMORY LIMIT, AND THE SCRATCH DISK USAGE WILL BE ROUGHLY PROPORTIONAL TO THE DIFFERENCE
+          BETWEEN THE ESTIMATED "MEMORY TO MINIMIZE I/O" AND THE MEMORY UPPER LIMIT. HOWEVER ACCURATE
+          ESTIMATE OF THE SCRATCH DISK SPACE IS NOT POSSIBLE.
+      (6) USING "*RESTART, WRITE" CAN GENERATE A LARGE AMOUNT OF DATA WRITTEN IN THE WORK DIRECTORY.
+
+
+                                INCREMENT    10 SUMMARY
+
+
+ TIME INCREMENT COMPLETED  0.100    ,  FRACTION OF STEP COMPLETED   1.00    
+ STEP TIME COMPLETED        1.00    ,  TOTAL TIME COMPLETED         1.00    
+
+
+
+                              J - I N T E G R A L   E S T I M A T E S
+
+   CRACK        CRACKFRONT          C O N T O U R S
+   NAME         NODE SET
+                                     1               2               3               4               5
+                                     6               7               8               9              10
+
+
+   JINTEGRAL_CRACK-1
+                   -3-                16.90           21.27           21.65           21.70           21.72    
+                                      21.73           21.73           21.74           21.74           21.74    
+
+
+
+     LABELS REFERENCED IN THE ABOVE TABLE
+
+      -3-      ASSEMBLY__PICKEDSET1266                                                         
+
+
+          THE ANALYSIS HAS BEEN COMPLETED
+
+
+
+                              ANALYSIS COMPLETE
+                              WITH      2 WARNING MESSAGES ON THE DAT FILE
+
+
+
+     JOB TIME SUMMARY
+       USER TIME (SEC)      =   1.7000    
+       SYSTEM TIME (SEC)    =  0.20000    
+       TOTAL CPU TIME (SEC) =   1.9000    
+       WALLCLOCK TIME (SEC) =          2
