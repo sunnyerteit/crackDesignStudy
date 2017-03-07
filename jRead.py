@@ -95,6 +95,6 @@ fig.colorbar(surf)
 plt.show()
 
 # the reason for why increased width has a higher effect than height is due to the load being applied as a constant
-# displacement. Thuas less width -> higher avg. strain dL/L -> higher stress
+# displacement. Thus less width -> higher avg. strain dL/L -> higher stress
 
 
